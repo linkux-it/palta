@@ -1,0 +1,27 @@
+{
+  "name": "palta",
+  "version": "1.0.0",
+  "description": "ArangoDB ODM",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linkux-it/palta.git"
+  },
+  "keywords": [
+    "arangodb",
+    "nosql",
+    "odm"
+  ],
+  "author": "Luis Carlos Cruz Carballo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/linkux-it/palta/issues"
+  },
+  "homepage": "https://github.com/linkux-it/palta#readme",
+  "dependencies": {
+    "arangojs": "^4.1.0"
+  }
+}
