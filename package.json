@@ -4,6 +4,7 @@
   "description": "ArangoDB ODM",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint lib/** test/** index.js",
     "test": "./node_modules/.bin/babel-node --harmony-proxies node_modules/.bin/babel-istanbul cover node_modules/.bin/_mocha --report text --check-coverage -- --timeout 5000 -u tdd",
     "coverage": "./node_modules/.bin/babel-node --harmony-proxies node_modules/.bin/babel-istanbul cover node_modules/.bin/_mocha  --report cobertura --dir shippable/codecoverage/ -- --timeout 5000 -u tdd"
   },
