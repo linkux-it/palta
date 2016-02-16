@@ -1,10 +1,11 @@
 {
   "name": "palta",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "ArangoDB ODM",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "./node_modules/.bin/babel-node --harmony-proxies node_modules/.bin/babel-istanbul cover node_modules/.bin/_mocha --report text --check-coverage -- --timeout 5000 -u tdd",
+    "coverage": "./node_modules/.bin/babel-node --harmony-proxies node_modules/.bin/babel-istanbul cover node_modules/.bin/_mocha  --report cobertura --dir shippable/codecoverage/ -- --timeout 5000 -u tdd"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,26 @@
   },
   "homepage": "https://github.com/linkux-it/palta#readme",
   "dependencies": {
-    "arangojs": "^4.1.0"
+    "arangojs": "^4.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-istanbul": "^0.6.0",
+    "chai": "^3.5.0",
+    "eslint-plugin-react": "^3.16.1",
+    "mocha": "^2.4.5"
+  },
+  "babel": {
+    "ignore": false,
+    "presets": [
+      "es2015",
+      "react"
+    ],
+    "plugins": [
+      "syntax-object-rest-spread",
+      "syntax-async-functions",
+      "syntax-async-generators",
+      "transform-regenerator"
+    ]
   }
 }

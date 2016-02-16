@@ -1,0 +1,13 @@
+{
+  "libs": [
+    "chai",
+    "ecma6"
+  ],
+  "loadEagerly": [
+    "lib/**/*.js",
+    "index.js"
+  ],
+  "plugins": {
+    "node": {}
+  }
+}
