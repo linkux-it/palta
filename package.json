@@ -49,8 +49,7 @@
   "babel": {
     "ignore": false,
     "presets": [
-      "es2015",
-      "react"
+      "es2015"
     ],
     "plugins": [
       "syntax-object-rest-spread",
