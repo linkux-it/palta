@@ -1,23 +1,18 @@
 {
+    "root": true,
     "parser": "babel-eslint",
     "settings": {
-        "ecmascript": 7,
-        "ecmascript": 6
+        "ecmascript": 7
     },
-    "plugins": [
-        "react"
-    ],
     "ecmaFeatures": {
         "blockBindings": true,
         "forOf": true,
         "jsx": true,
         "generators": true,
         "destructuring": true,
-        "binaryLiterals": true,
         "classes": true,
         "defaultParams": true,
         "modules": true,
-        "binaryLiterals": true,
         "binaryLiterals": true
     },
     "rules": {

@@ -28,8 +28,14 @@
   },
   "devDependencies": {
     "babel-cli": "^6.5.1",
+    "babel-eslint": "^5.0.0",
     "babel-istanbul": "^0.6.0",
+    "babel-plugin-syntax-async-functions": "^6.5.0",
+    "babel-plugin-syntax-async-generators": "^6.5.0",
+    "babel-plugin-syntax-object-rest-spread": "^6.5.0",
+    "babel-plugin-transform-regenerator": "^6.5.2",
     "chai": "^3.5.0",
+    "eslint": "^2.1.0",
     "eslint-plugin-react": "^3.16.1",
     "mocha": "^2.4.5"
   },
